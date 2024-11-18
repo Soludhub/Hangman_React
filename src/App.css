@@ -1,7 +1,56 @@
-.App {
-  text-align: center;
+html{
+  background-color: black;
 }
-
+.App-h {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-areas: 
+  "h h h"
+  "a a a"
+  "a a a"
+  "c c c"
+  "f f f"
+  ;  
+  grid-template-rows: 1fr 3fr 3fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: "Chalk";
+  color: antiquewhite;
+  font-size: calc(4px + 2vmin);
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+  linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: 15px solid black;
+}
+.App-g {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-areas: 
+  "h h h"
+  "a a b"
+  "a a b"
+  "c c b"
+  "f f f"
+  ;  
+  grid-template-rows: 1fr 3fr 3fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: "Chalk";
+  color: antiquewhite;
+  font-size: calc(4px + 2vmin);
+  --color: rgba(114, 114, 114, 0.3);
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+  linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: 15px solid black;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -12,16 +61,56 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
+  grid-area: h;
+  text-align: center;
+
+}
+.App-header p{
+  margin: 1%;
+  font-size: calc(10px + 10vmin);
+  border-bottom: 3px solid white;
+}
+.App-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(10px + 4vmin);
+  color: white;
+  grid-area: f;
+  text-align: center;
+}
+.App-footer p {
+  width: 50%;
+  border-top: 3px solid white;
+}
+
+.App-a {
+  width: 100%;
+  display: grid;
+  font-size: calc(10px + 4vmin);
+  color: white;
+  grid-area: a;
+}
+.App-b {
+  display: grid;
+  font-size: calc(10px + 4vmin);
+  width: 100%;
+  color: white;
+  grid-area: b;
+}
+.App-c {
+  display: grid;
+  font-size: calc(10px + 4vmin);
+  width: 100%;
+  color: white;
+  grid-area: c;
 }
 
 .App-link {
@@ -36,3 +125,23 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: "Chalk";   /*Can be any text*/
+  src: local("JenkineBold-nRVMV"),
+    url("./fonts/JenkineBold-nRVMV.otf") format("truetype");
+}
+
+/* @media screen and (max-width: 768px) {
+  .App {
+    grid-template-areas: 
+    "h h h h"
+    "a a a a"
+    "c c b b"
+    "c c b b"
+    "f f f f"
+    ;  
+    grid-template-rows: 1fr 3fr 3fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  } */
+/* } */

@@ -1,0 +1,19 @@
+.Stats-display h3{
+    text-align: center;
+    font-size: calc(6px + 4vmin);
+    margin: 2%;
+}.Stats-display > div > p{
+    text-decoration: none;
+    font-size: calc(2px + 4vmin);
+    align-items: center;
+    text-align: center;
+    margin: 2%;
+    width: 100%;
+}
+.Stats-Section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

@@ -1,0 +1,42 @@
+.space {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: 
+    "letter10 letter11 letter12 letter13 letter14 letter15 letter16 letter17 letter18 letter19 letter110 letter111 letter112 "
+    "letter20 letter21 letter22 letter23 letter24 letter25 letter26 letter27 letter28 letter29 letter210 letter211 letter212 ";
+}
+
+.space-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.keyboard-letters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.keyboard-letters p:hover{
+  cursor: pointer;
+}
+.keyboard-letters:hover{
+  cursor: default;
+}
+.keyboard-cross {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}

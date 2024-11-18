@@ -1,0 +1,9 @@
+.Timer{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.Timer p {
+    font-size: calc(7px + 7vmin);
+    margin: 0%;
+}

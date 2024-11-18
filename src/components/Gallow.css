@@ -1,0 +1,30 @@
+.gallow-div{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+/* @media screen and (min-width: 768px){ */
+
+    .gallow-img{
+        width: 100%;
+        /* position: absolute; */
+        /* overflow: hidden; */
+        /* bottom: 10%; */
+        /* border: 1px solid yellow; */
+    }
+/* } */
+
+/* @media screen and (max-width: 768px) {
+    .gallow-img{
+        height: 100%; */
+        /* width: auto; */
+         /* size-adjust: 100% ; */ 
+        /* position: absolute; */
+        /* overflow: hidden; */
+        /* bottom: 10%; */
+        /* border: 1px solid yellow; */
+    /* }  
+} */
